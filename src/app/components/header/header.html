@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <span class="brand-logo">SA</span>
+      <span class="brand-name">Suraj Ahire</span>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" (click)="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" [class.open]="isNavOpen">
+      <a href="#hero" (click)="closeNavOnClick()">Home</a>
+      <a href="#about" (click)="closeNavOnClick()">About</a>
+      <a href="#skills" (click)="closeNavOnClick()">Skills</a>
+      <a href="#projects" (click)="closeNavOnClick()">Projects</a>
+      <a href="#experience" (click)="closeNavOnClick()">Experience</a>
+      <a href="#contact" (click)="closeNavOnClick()">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode" (click)="toggleTheme()">
+        {{ isDarkMode ? '🌙' : '☀️' }}
+      </button>
+    </nav>
+  </div>
+</header>
