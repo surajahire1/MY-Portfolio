@@ -3,5 +3,8 @@
   publish = "dist/YOUR_PROJECT_NAME"
   functions = "netlify/functions"
 
+[build.environment]
+  NODE_VERSION = "24.13.0"
+
 [[plugins]]
   package = "@netlify/angular-runtime"
