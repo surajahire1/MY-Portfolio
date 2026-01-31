@@ -1,18 +1,7 @@
 [build]
-  command = "npm run build:netlify"
-  publish = "dist/surya-portfolio/browser"
+  command = "npm run build"
+  publish = "dist/YOUR_PROJECT_NAME"
   functions = "netlify/functions"
 
-[build.environment]
-  NODE_VERSION = "18.17.0"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[[headers]]
-  for = "/*.pdf"
-  [headers.values]
-    Content-Type = "application/pdf"
-    Cache-Control = "public, max-age=31536000"
+[[plugins]]
+  package = "@netlify/angular-runtime"
