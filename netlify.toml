@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist/YOUR_PROJECT_NAME"
+  publish = "dist/surya-portfolio/browser"  # ← Change this!
   functions = "netlify/functions"
 
 [build.environment]
