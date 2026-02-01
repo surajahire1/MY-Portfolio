@@ -289,6 +289,10 @@ html[data-theme='light'] .hero-dot {
   );
 }
 
+html[data-theme='light'] .section-alt {
+    background: linear-gradient(to bottom, rgb(248 249 250), rgb(144 156 183 / 70%));
+}
+
 .timeline[_ngcontent-ng-c1735386735]   li[_ngcontent-ng-c1735386735]::before {
     content: "";
     position: absolute;
